@@ -1,38 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>*methods and loops(afterclass)*</title>
+    <title>methods and loops in javascript</title>
 <style>
     body{
         zoom: 200%;
-        background-color: whitesmoke;
     }
 </style>    
 </head>
 <body>
-    <h1>methods, loops and switches</h1>
-    <h4>afterclass project</h4>
-<br>
-<br>
-<br>
-
+    <h1>methods and loops(js)</h1>
+    <h3>afterclass project</h3>
 <script>
-    //methods
-    var methods='methods:';
+    //javascript typography methods
+    var methods='(learned in class)methods:';
     document.write(methods);
     document.write("<br>");
-    document.write("<br>");
-
-    var methods_str="'str=PsYcHoNeUrOiMmUnOlOgY'";
-    document.write(methods_str);
-    document.write("<br>");
-    document.write("<br>");
-
-    var methods_explaination="explanation: using built in typography methods to manipulate 'PsYcHoNeUrOiMmUnOlOgY'.";
-    document.write(methods_explaination);
-    document.write("<br>");
-    document.write("<br>");
-
+    
     var str='PsYcHoNeUrOiMmUnOlOgY';
     document.write(str.toUpperCase()+" ('toUpperCase' method)");
     document.write("<br>");
@@ -40,55 +24,45 @@
     document.write("<br>");
     document.write(str.startsWith()+" ('startsWith' method)");
     document.write("<br>");
-
     document.write("<br>");
-    document.write("<br>");
+    document.write("<br>")
 
-    //for-loops
-    var forloops='for-loops:';
+    //forloops
+    var forloops='forloops(printing a number 10 times):';
     document.write(forloops);
-    document.write("<br>");
-    document.write("<br>");
-
-    var forloops_str="str='hippopotomonstrosesquippedaliophobia'";
-    document.write(forloops_str);
-    document.write("<br>");
-    document.write("<br>");
-    
-    var forloops_explaination="explanation: using 'for(var count=1; count<=10; count++)' to print 'this is a for-loop demonstration' 10 times.";
-    document.write(forloops_explaination);
-    document.write("<br>");
     document.write("<br>");
 
     for(var count=1; count<=10; count++)
     {
     document.write("this is a for-loop demonstration");
     document.write("<br>");
-    document.write("<br>");
     }
 
-    //example
-    var example='another for-loop example:';
-    document.write(example);
-    document.write("<br>");
     document.write("<br>");
 
-    var example_str="str='hippopotomonstrosesquippedaliophobia'";
-    document.write(example_str);
-    document.write("<br>");
-    document.write("<br>");
-
-    var example_explaination="explanation: using 'for(var count=1; count<=5; count++)' to print 'another example of'for-loops' 5 times.";
-    document.write(example_explaination);
-    document.write("<br>");
+    //printing a random value using for-loops
+    var random='printing a random value using for-loops:';
+    document.write(random);
     document.write("<br>");
 
-    for(var count=1; count<=5; count++)
-    {
-    document.write("another example of 'for-loops'");
-    document.write("<br>");
-    document.write("<br>");
+    var number="";
+    for (i=1; i<11; i++){
+        number+=i+"<br>";
     }
-</script>    
+    document.write("the random value is "+Math.floor(Math.random()*100));
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>")
+
+    //switch
+    var switches="printing today's date:";
+    document.write(switches);
+    document.write("<br>");
+
+    //printing today's date
+    var date= new Date();
+    document.write("todays date is "+date.getDate());
+
+</script>
 </body>    
 </html>
